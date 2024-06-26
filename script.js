@@ -328,13 +328,13 @@ function Winner() {
 // Winner()
 
 
-function saveData() {
-    localStorage.setItem("data", table.innerHTML);
-}
+// function saveData() {
+//     localStorage.setItem("data", table.innerHTML);
+// }
 
-function showTask() {
-    table.innerHTML = localStorage.getItem("data");
-}
+// function showTask() {
+//     table.innerHTML = localStorage.getItem("data");
+// }
 // showTask()
 
 
