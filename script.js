@@ -284,7 +284,7 @@ function colorPrediction() {
     }
 
     timer.innerHTML = mn + ":" + sec
-    saveData()
+    // saveData()
 }
 
 setInterval(colorPrediction, 1000)
@@ -335,7 +335,7 @@ function saveData() {
 function showTask() {
     table.innerHTML = localStorage.getItem("data");
 }
-showTask()
+// showTask()
 
 
 
