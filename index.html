@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Prediction App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="nav1">
+            <div><img src="./—Pngtree—crown crown pattern headwear accessories_3823245.png" width="30px" alt=""> <span>Color Predict</span></div>
+            <div id="pr">
+                <div class="earn"><span id="rupees">₹ </span> <span id="walletMoney">10000</span></div>
+                <div class="profile">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" width="40px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="part1">
+            <div id="p1">
+                <i class="fa-solid fa-question pink" id="q"></i>
+                <span class="num red">8</span>
+                <span class="num red">2</span>
+                <span class="num green">1</span>
+                <span class="num red">4</span>
+                <span class="num green">9</span>
+                <i id="file" class="fa-regular fa-file pink"></i>
+            </div>
+            <div id="grid">
+                <div id="btn-grid">
+                    <button class="green">Join Green</button>
+                    <button class="violet">Join Violet</button>
+                    <button class="red">Join Red</button>
+                </div>
+                
+                <div id="num-grid">
+                    <button class="blue-red">0</button>
+                    <button class="green">1</button>
+                    <button class="red">2</button>
+                    <button class="green">3</button>
+                    <button class="red">4</button>
+                    <button class="blue-green">5</button>
+                    <button class="red">6</button>
+                    <button class="green">7</button>
+                    <button class="red">8</button>
+                    <button class="green">9</button>
+                </div>
+            </div>
+            <div id="p2">
+                <div>
+                    Period <span id="period">2024427220</span>
+                </div>
+                <div>
+                    Count Down <span id="timer">02:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="part2">
+            <div class="option">
+                <button class="current">Parity</button>
+                <button>Sapre</button>
+                <button>Bcone</button>
+                <button>Emerd</button>
+            </div>
+            <table>
+                <tr>
+                    <th>Period</th>
+                    <th>Price</th>
+                    <th>Number</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>2024427219</td>
+                    <td>31238</td>
+                    <td>6</td>
+                    <td class="red clr"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="navbar">
+            <ol>
+                <li id="menu"><i class="fa-solid fa-bars"></i> <span>Menu</span></li>
+                <li><i class="fa-solid fa-trophy"></i> <span>Win</span></li>
+                <li class="active"><i class="fa-solid fa-wallet"></i> <span>Wallet</span></li>
+                <li><i class="fa-solid fa-money-bill-1"></i> <span>BITGAME</span></li>
+                <li><i class="fa-solid fa-share-nodes"></i> <span>Promotion</span></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Join Button Pop Up -->
+    <div class="joinPopUp">
+        <i class="fa-solid fa-xmark"></i>
+        <h3 class="center">Join Red</h3>
+        <p>Contract Money</p>
+        <div class="choice">
+            <button id="bid" style="color: white" class="red">10</button>
+            <button>100</button>
+            <button>1000</button>
+            <button>10000</button>
+        </div>
+        
+        <label>Number <button id="minusBtn">-</button><input type="number"><button id="plusBtn">+</button></label>
+        <p class="center">Total contract money is <span id="total"></span></p>
+        <div class="center check"><input type="checkbox"> I agree <a href="#">Presale Rule</a></div>
+        <button id="confirm">Confirm</button>
+    </div>
+    <!-- Result Pop Up -->
+    <div id="resPopUp">
+        <h2></h2>
+        <p></p>
+    </div>
+
+
+    <div id="winning-history">
+        <h2>Win History</h2>
+        <table>
+            <tr>
+                <td>Period</td>
+                <td>Price</td>
+                <td>Number</td>
+                <td>Result</td>
+                <td>Amount</td>
+            </tr>
+        </table>
+    </div>
+    <!-- <div id="menuList">
+         <h1>Hello Rams</h1>
+    </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
