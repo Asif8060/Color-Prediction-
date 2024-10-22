@@ -223,14 +223,14 @@ function colorPrediction() {
         num[4].innerHTML = ran5
 
         num.forEach((n) => {
-            if(n.innerHTML == 1 || n.innerHTML == 3 || n.innerHTML == 7 || n.innerHTML == 9 || n.innerHTML == 5) {
-                if(n.className == "red") {
+            if(n.innerHTML === 1 || n.innerHTML === 3 || n.innerHTML === 7 || n.innerHTML === 9 || n.innerHTML === 5) {
+                if(n.className === "red") {
                     n.classList.remove("red")
                     n.classList.add("green")
                 } 
             }
-            else if(n.innerHTML == 2 || n.innerHTML == 4 || n.innerHTML == 6 || n.innerHTML == 8 || n.innerHTML == 0) {
-                if(n.className == "green") {
+            else if(n.innerHTML === 2 || n.innerHTML === 4 || n.innerHTML === 6 || n.innerHTML === 8 || n.innerHTML === 0) {
+                if(n.className === "green") {
                     n.classList.remove("green")
                     n.classList.add("red")
                 }             
