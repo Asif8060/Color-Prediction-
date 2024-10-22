@@ -77,22 +77,22 @@ bd()
 contractMoneyButton.forEach((btn) => {
     btn.addEventListener("click", () => {
 
-        if(b1.className == "red") {
+        if(b1.className === "red") {
             b1.classList.remove("red")
             b1.style.color = "rgb(30, 137, 112)"
             b1.removeAttribute("id");
         }
-        if(b2.className == "red") {
+        if(b2.className === "red") {
             b2.classList.remove("red")
             b2.style.color = "rgb(30, 137, 112)"
             b2.removeAttribute("id");
         }
-        if(b3.className == "red") {
+        if(b3.className === "red") {
             b3.classList.remove("red")
             b3.style.color = "rgb(30, 137, 112)"
             b3.removeAttribute("id");
         }
-        if(b4.className == "red") {
+        if(b4.className === "red") {
             b4.classList.remove("red")
             b4.style.color = "rgb(30, 137, 112)"
             b4.removeAttribute("id");
@@ -145,28 +145,28 @@ confirmButton.addEventListener("click", () => {
         input.value = 1
         
     
-        if(b1.className != "red") {
+        if(b1.className !== "red") {
             b1.classList.add("red")
             b1.style.color = "white"
-            if(b2.className == "red") {
+            if(b2.className === "red") {
                 b2.classList.remove("red")
                 b2.style.color = "rgb(30, 137, 112)"
             }
-            if(b3.className == "red") {
+            if(b3.className === "red") {
                 b3.classList.remove("red")
                 b3.style.color = "rgb(30, 137, 112)"
             }
-            if(b4.className == "red") {
+            if(b4.className === "red") {
                 b4.classList.remove("red")
                 b4.style.color = "rgb(30, 137, 112)"
             }
-            if(b2.id == "bid") {
+            if(b2.id === "bid") {
                 b2.removeAttribute("id")
             }
-            else if(b3.id == "bid") {
+            else if(b3.id === "bid") {
                 b3.removeAttribute("id")
             }
-            else if(b4.id == "bid") {
+            else if(b4.id === "bid") {
                 b4.removeAttribute("id")
             }
         }
@@ -194,15 +194,15 @@ function colorPrediction() {
     let mn = timeParts[0]
     let sec = timeParts[1]
 
-    if((mn == 2 || mn == 1) && sec == 0) {
+    if((mn === 2 || mn === 1) && sec === 0) {
         mn -= 1;
         sec = 59;
         mn = "0" + mn
     }
-    else if((mn == 1 || mn == 0) && sec > 0) {
+    else if((mn === 1 || mn === 0) && sec > 0) {
         sec -= 1
     }
-    else if(mn == 0 && sec == 0) {
+    else if(mn === 0 && sec === 0) {
 
         period = document.getElementById("period")
 
@@ -268,10 +268,10 @@ function colorPrediction() {
         
         period.innerText = parseInt(prtime.innerText) + 1
 
-        if(rand == 1 || rand == 3 || rand == 5 || rand == 7 || rand == 9) {
+        if(rand === 1 || rand === 3 || rand === 5 || rand === 7 || rand === 9) {
             cell4.classList.add("green")
         }
-        else if(rand == 0 || rand == 2 || rand == 4 || rand == 6 || rand == 8) {
+        else if(rand === 0 || rand === 2 || rand === 4 || rand === 6 || rand === 8) {
             cell4.classList.add("red")
         }
 
@@ -306,7 +306,7 @@ function Winner() {
     let remainClass = classes.filter(cls => cls !== "clr")
     if(clsName != "") {
         
-        if(remainClass[0] == clsName) {
+        if(remainClass[0] === clsName) {
             walletMoney.innerHTML = parseInt(walletMoney.innerHTML) + (2*betMoney)
             resH.innerText = "You Won Rs " + betMoney
             resP.innerText = "Superb! Prediction...."
@@ -343,25 +343,25 @@ function Winner() {
 let feature = document.querySelectorAll(".part2 .option button")
 feature.forEach((btn) => {
     btn.addEventListener("click", () => { 
-        if(btn.innerText == "Parity") {
+        if(btn.innerText === "Parity") {
             if(table.hasAttribute('id')) {
                 table.removeAttribute('id')
             }
             table.id = "parity"
         }
-        if(btn.innerText == "Sapre") {
+        if(btn.innerText === "Sapre") {
             if(table.hasAttribute('id')) {
                 table.removeAttribute('id')
             }
             table.id = "sapre"
         }
-        if(btn.innerText == "Bcone") {
+        if(btn.innerText === "Bcone") {
             if(table.hasAttribute('id')) {
                 table.removeAttribute('id')
             }
             table.id = "bcone"
         }
-        if(btn.innerText == "Emerd") {
+        if(btn.innerText === "Emerd") {
             if(table.hasAttribute('id')) {
                 table.removeAttribute('id')
             }
